@@ -507,3 +507,42 @@ a {
     padding: 28px 6%;
   }
 }
+.formulario-cita {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  max-width: 380px;
+  margin: 20px auto;
+  text-align: left;
+}
+
+.formulario-cita label {
+  display: block;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: -5px;
+}
+
+.formulario-cita input,
+.formulario-cita select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  border: 1px solid #cbded9;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #183f3b;
+  font-size: 14px;
+}
+
+.formulario-cita input:focus,
+.formulario-cita select:focus {
+  outline: 2px solid #65c9bc;
+  outline-offset: 2px;
+}
+
+.formulario-cita button {
+  align-self: flex-start;
+  margin-top: 8px;
+}

@@ -130,6 +130,45 @@ function App() {
           </div>
 
           <div className="contacto-acciones">
+            <form
+  className="formulario-cita"
+  onSubmit={(e) => {
+    e.preventDefault()
+    alert('Formulario validado. Para confirmar tu cita, contáctanos por WhatsApp.')
+  }}
+>
+  <label htmlFor="nombre">Nombre completo</label>
+  <input
+    id="nombre"
+    name="nombre"
+    type="text"
+    placeholder="Ingresa tu nombre"
+    required
+  />
+
+  <label htmlFor="correo">Correo electrónico</label>
+  <input
+    id="correo"
+    name="correo"
+    type="email"
+    placeholder="ejemplo@correo.com"
+    required
+  />
+
+  <label htmlFor="servicio">Servicio dental</label>
+  <select id="servicio" name="servicio" required defaultValue="">
+    <option value="" disabled>Selecciona un servicio</option>
+    <option value="Limpieza dental">Limpieza dental</option>
+    <option value="Blanqueamiento">Blanqueamiento dental</option>
+    <option value="Ortodoncia">Ortodoncia</option>
+    <option value="Odontología general">Odontología general</option>
+  </select>
+
+  <label htmlFor="fecha">Fecha deseada</label>
+  <input id="fecha" name="fecha" type="date" required />
+
+  <button className="boton" type="submit">Solicitar cita</button>
+</form>
             <a
               className="boton"
               href="https://wa.me/51999999999?text=Hola%2C%20quisiera%20consultar%20por%20una%20cita%20odontol%C3%B3gica."
