@@ -1,120 +1,166 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
+
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
+const servicios = [
+  {
+    numero: '01',
+    nombre: 'Limpieza dental',
+    descripcion: 'Cuida tu sonrisa con una limpieza profesional y preventiva.',
+  },
+  {
+    numero: '02',
+    nombre: 'Blanqueamiento',
+    descripcion: 'Mejora la apariencia de tu sonrisa con atención profesional.',
+  },
+  {
+    numero: '03',
+    nombre: 'Ortodoncia',
+    descripcion: 'Opciones de tratamiento para alinear tus dientes.',
+  },
+  {
+    numero: '04',
+    nombre: 'Odontología general',
+    descripcion: 'Revisiones y tratamientos para cuidar tu salud bucal.',
+  },
+]
 
+function App() {
   return (
     <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
+      <header className="encabezado">
+        <a className="marca" href="#inicio">
+          <span className="marca-icono">✳</span>
+          Sonrisa Sana
+        </a>
 
-      <div className="ticks"></div>
+        <nav className="navegacion" aria-label="Navegación principal">
+          <a href="#inicio">Inicio</a>
+          <a href="#servicios">Servicios</a>
+          <a href="#nosotros">Nosotros</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
 
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
+        <a className="boton boton-cabecera" href="#contacto">
+          Agenda tu cita
+        </a>
+      </header>
 
-      <div className="ticks"></div>
-      <section id="spacer"></section>
+      <main>
+        <section className="portada" id="inicio">
+          <div className="portada-contenido">
+            <p className="etiqueta">TU SONRISA, NUESTRA PRIORIDAD</p>
+            <h1>Una sonrisa saludable cambia todo.</h1>
+            <p className="portada-texto">
+              En Sonrisa Sana te acompañamos a cuidar tu salud bucal
+              con atención cercana y profesional.
+            </p>
+
+            <div className="portada-acciones">
+              <a className="boton" href="#contacto">
+                Solicitar una cita ↗
+              </a>
+              <a className="enlace-secundario" href="#servicios">
+                Conoce nuestros servicios
+              </a>
+            </div>
+
+            <div className="portada-dato">
+              <span className="dato-icono">✓</span>
+              Atención cercana y personalizada
+            </div>
+          </div>
+
+          <div className="portada-visual" aria-label="Ilustración dental">
+            <div className="circulo-decorativo"></div>
+            <div className="tarjeta-sonrisa">
+              <span className="diente">☻</span>
+              <p>Tu mejor versión comienza con una sonrisa.</p>
+              <span className="estrellita">✳</span>
+            </div>
+            <span className="burbuja burbuja-uno">✦</span>
+            <span className="burbuja burbuja-dos">+</span>
+          </div>
+        </section>
+
+        <section className="servicios seccion" id="servicios">
+          <div className="titulo-seccion">
+            <p className="etiqueta">NUESTROS SERVICIOS</p>
+            <h2>Cuidamos cada detalle de tu sonrisa</h2>
+            <p>
+              Encuentra la atención que necesitas en un solo lugar.
+            </p>
+          </div>
+
+          <div className="servicios-grid">
+            {servicios.map((servicio) => (
+              <article className="servicio-card" key={servicio.numero}>
+                <span className="servicio-numero">{servicio.numero}</span>
+                <div className="servicio-simbolo">✳</div>
+                <h3>{servicio.nombre}</h3>
+                <p>{servicio.descripcion}</p>
+                <a href="#contacto" aria-label={`Consultar por ${servicio.nombre}`}>
+                  Consultar servicio ↗
+                </a>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section className="nosotros seccion" id="nosotros">
+          <div className="nosotros-simbolo">✧</div>
+          <div>
+            <p className="etiqueta">SOBRE NOSOTROS</p>
+            <h2>Tu tranquilidad también es parte del tratamiento.</h2>
+            <p>
+              Somos una plantilla de clínica odontológica pensada para
+              presentar servicios, orientar a los pacientes y facilitar
+              el contacto con el consultorio.
+            </p>
+          </div>
+        </section>
+
+        <section className="contacto seccion" id="contacto">
+          <div>
+            <p className="etiqueta">ESTAMOS PARA AYUDARTE</p>
+            <h2>Tu próxima sonrisa comienza aquí.</h2>
+            <p>
+              Escríbenos para consultar sobre nuestros servicios
+              y coordinar una cita.
+            </p>
+          </div>
+
+          <div className="contacto-acciones">
+            <a
+              className="boton"
+              href="https://wa.me/51999999999?text=Hola%2C%20quisiera%20consultar%20por%20una%20cita%20odontol%C3%B3gica."
+              target="_blank"
+              rel="noreferrer"
+            >
+              Contactar por WhatsApp ↗
+            </a>
+            <p>Reemplaza el número de ejemplo por el número autorizado de la clínica.</p>
+          </div>
+        </section>
+      </main>
+
+      <footer className="pie">
+        <a className="marca" href="#inicio">
+          <span className="marca-icono">✳</span>
+          Sonrisa Sana
+        </a>
+        <p>Plantilla demostrativa TUPLUS · Odontología</p>
+        <a href="#inicio">Volver arriba ↑</a>
+      </footer>
+
+      <a
+        className="whatsapp-flotante"
+        href="https://wa.me/51999999999?text=Hola%2C%20quisiera%20informaci%C3%B3n."
+        target="_blank"
+        rel="noreferrer"
+        aria-label="Contactar por WhatsApp"
+      >
+        WA
+      </a>
     </>
   )
 }
