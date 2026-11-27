@@ -1,0 +1,6 @@
+/* tablet */
+@media(max-width:900px){.hero-grid,.intro-grid,.feature-grid,.team-grid,.appointment-grid{gap:45px}
+.nav-links{gap:17px}
+.hero-visual{height:400px}
+.section{padding:85px 0}
+.contact-grid{gap:30px}}

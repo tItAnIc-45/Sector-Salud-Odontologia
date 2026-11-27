@@ -1,0 +1,15 @@
+/* Orden de carga. Tablet y móvil van al final. */
+@import "./variables.css";
+@import "./base-y-cabecera.css";
+@import "./hero.css";
+@import "./nosotros.css";
+@import "./tratamientos.css";
+@import "./destacado.css";
+@import "./equipo.css";
+@import "./cita.css";
+@import "./contacto.css";
+@import "./pie.css";
+@import "./tablet.css";
+@import "./movil.css";
+@import "./movil-pequeno.css";
+@import "./extras.css";

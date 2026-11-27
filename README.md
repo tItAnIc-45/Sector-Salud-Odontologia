@@ -1,19 +1,37 @@
-# React + Vite
+# Tu Plus Odontología, Nivel 1 Profesional
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Sitio de hasta 5 páginas de contenido, sin gestor de contenidos ni blog. Parte de tu plantilla profesional (azul marino y lima, DM Sans y Playfair Display) y la amplía de una página a cinco.
 
-Currently, two official plugins are available:
+## Páginas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+| Ruta | Página | Qué tiene |
+|---|---|---|
+| / | Inicio | Portada, valores, 3 tratamientos, bloque destacado, llamada a reservar |
+| /nosotros | Nosotros | Enfoque, recorrido de la primera visita, equipo |
+| /tratamientos | Tratamientos | Los 6 tratamientos con qué incluye cada uno |
+| /cita | Reservar | Formulario que abre WhatsApp |
+| /contacto | Contacto | Datos, mapa y preguntas frecuentes |
 
-## React Compiler
+## Cómo ejecutarlo
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+```bash
+npm install
+npm run dev       # http://localhost:5173
+npm run build     # carpeta dist, lista para subir a Vercel o Netlify
+```
 
-Note: This will impact Vite dev & build performances.
-You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
+## Cómo cambiar el contenido
 
-## Expanding the ESLint configuration
+Los textos que cambian más se editan en `src/data/site.js`: ciudad, número de WhatsApp (con código de país, sin signos), mapa, fotos, tratamientos, pasos y preguntas frecuentes. No necesita base de datos.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Carpetas
+
+| Carpeta | Contenido |
+|---|---|
+| src/pages | Un archivo por página |
+| src/sections | Bloques que se reutilizan entre páginas |
+| src/components | Cabecera, pie, botón flotante, cabecera de página |
+| src/styles | Estilos por sección |
+| public/img/art | Ilustraciones de tratamientos y respaldo de fotos |
+
+Si necesitas gestor de contenidos, blog o portal de pacientes, eso está en los niveles Empresarial y Corporativo.

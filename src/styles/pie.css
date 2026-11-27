@@ -1,0 +1,12 @@
+/* pie */
+.footer{background:#092c3a;color:#fff}
+.footer-main{min-height:125px;display:flex;align-items:center;justify-content:space-between}
+.brand-footer{color:#fff}
+.brand-footer small{color:#bdd0d2}
+.footer-main>p{font-family:"Playfair Display Variable","Playfair Display";font-size:20px;color:#c7d7d9}
+.socials{display:flex;gap:10px}
+.socials a{width:34px;height:34px;border:1px solid #45616b;display:grid;place-items:center}
+.socials svg{width:15px}
+.footer-bottom{border-top:1px solid #294956;padding:19px 0;display:flex;justify-content:space-between;font-size:9px;color:#9db3b8}
+.footer-bottom a{color:#eaf0c0}
+.floating-contact{position:fixed;bottom:22px;right:22px;width:52px;height:52px;background:#dfe94b;color:#153b47;border-radius:50%;display:grid;place-items:center;box-shadow:0 8px 24px #102f3d35;z-index:10}

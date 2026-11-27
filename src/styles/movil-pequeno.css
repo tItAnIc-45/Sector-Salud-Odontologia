@@ -1,0 +1,6 @@
+/* movil-pequeno */
+@media(max-width:420px){.service-grid{grid-template-columns:1fr}
+.hero h1{font-size:47px}
+.hero-actions{align-items:flex-start;flex-direction:column;gap:18px}
+.topbar-inner{gap:10px}
+.topbar-inner a{font-size:9px}}

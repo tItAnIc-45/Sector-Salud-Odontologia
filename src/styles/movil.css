@@ -1,0 +1,36 @@
+/* movil */
+@media(max-width:700px){.container{width:min(100% - 34px,540px)}
+.topbar-inner{justify-content:center;gap:14px;font-size:9px}
+.topbar-inner span:nth-child(2){display:none}
+.nav-wrap{height:70px}
+.menu-toggle{display:block}
+.nav-links{display:none;position:absolute;top:70px;left:0;right:0;background:#fff;padding:22px 25px 26px;box-shadow:0 15px 25px #0d33441a;flex-direction:column;align-items:stretch;gap:19px}
+.nav-links.open{display:flex}
+.nav-cta{justify-content:space-between}
+.hero{padding:52px 0 20px}
+.hero-grid,.intro-grid,.feature-grid,.team-grid,.appointment-grid,.contact-grid{grid-template-columns:1fr}
+.hero-grid{gap:42px}
+.hero h1{font-size:54px}
+.hero-visual{height:340px;margin-left:28px}
+.hero-note{left:-25px}
+.hero-bottom{margin-top:45px;font-size:7px}
+.section{padding:70px 0}
+.intro-grid,.team-grid{gap:48px}
+.intro-image{height:330px}
+.intro h2,.section h2{font-size:40px}
+.section-heading{display:block}
+.section-heading>p{margin-top:17px}
+.service-grid{grid-template-columns:1fr 1fr}
+.service-card{padding:20px;min-height:220px}
+.service-card h3{font-size:20px}
+.feature-band{padding:65px 0}
+.feature-grid{gap:35px}
+.feature-photo{height:280px}
+.team-photo{height:330px;margin-left:20px}
+.appointment-grid{gap:35px}
+.appointment-form{padding:27px 23px}
+.map-frame{height:310px}
+.footer-main{padding:28px 0;gap:18px;flex-wrap:wrap}
+.footer-main>p{font-size:17px;order:3;width:100%;margin:0}
+.footer-bottom{gap:12px;line-height:1.6}
+.values{gap:8px}}

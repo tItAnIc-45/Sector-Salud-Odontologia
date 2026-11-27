@@ -1,0 +1,23 @@
+/* cita */
+.appointment{background:#15495b;color:#fff}
+.appointment-grid{display:grid;grid-template-columns:1fr .85fr;gap:100px;align-items:center}
+.appointment-copy>p{max-width:420px}
+.appointment-detail{display:flex;align-items:center;gap:13px;margin-top:40px}
+.appointment-detail>svg{color:#eff45b}
+.appointment-detail strong,.appointment-detail small{display:block}
+.appointment-detail strong{font-size:11px}
+.appointment-detail small{font-size:10px;color:#b8cdd1;margin-top:5px}
+.appointment-form{background:#fff;color:var(--ink);padding:35px 38px;box-shadow:0 20px 50px #00243133}
+.appointment-form h3{font-family:"Playfair Display Variable","Playfair Display";font-size:29px;font-weight:500;margin:0 0 5px}
+.appointment-form>p{font-size:11px;color:#7c8d91;margin:0 0 23px}
+.appointment-form label{display:block;font-size:10px;font-weight:700;margin:14px 0;color:#47616a}
+.appointment-form input,.appointment-form select{display:block;width:100%;margin-top:7px;padding:12px 13px;border:1px solid #e1e7e5;background:#fbfcfa;color:#26434c;font-size:11px;outline:none}
+.appointment-form input:focus,.appointment-form select:focus{border-color:#9eae26}
+.form-submit{width:100%;border:0;margin-top:9px;cursor:pointer}
+.form-legal{display:block;font-size:8px;color:#96a2a4;line-height:1.6;margin-top:13px}
+.success-state{text-align:center;padding:28px 0}
+.success-state svg{color:#8ca31a}
+.success-state h3{margin:15px 0}
+.success-state p{font-size:12px;line-height:1.8;color:#73848a}
+.btn-dark{background:#123e4d;color:#fff}
+.btn-dark:hover{background:#205b6c}
