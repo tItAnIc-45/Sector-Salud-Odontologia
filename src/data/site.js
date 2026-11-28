@@ -9,7 +9,7 @@ export const site = {
 
 // Fotos. Si una foto no carga se muestra la ilustración local de respaldo (public/img/art).
 export const photos = {
-  hero: { src: "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1500&q=88", fb: "/img/art/sparkles.svg" },
+  hero: { src: "https://plus.unsplash.com/premium_photo-1682097288491-7e926a30cd0b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D", fb: "/img/art/sparkles.svg" },
   clinic: { src: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1200&q=85", fb: "/img/art/shieldcheck.svg" },
   patient: { src: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=900&q=85", fb: "/img/art/smile.svg" },
   team: { src: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=1000&q=85", fb: "/img/art/badgecheck.svg" }

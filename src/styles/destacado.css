@@ -2,6 +2,6 @@
 .feature-band{background:#0c3443;color:#fff;padding:85px 0}
 .feature-grid{display:grid;grid-template-columns:1fr 1fr;gap:90px;align-items:center}
 .feature-copy h2,.appointment h2{font-size:clamp(38px,4.2vw,54px);line-height:1.1;margin:23px 0}
-.feature-copy p,.appointment-copy>p{font-size:13px;line-height:1.9;color:#c0d2d5;max-width:430px;margin-bottom:28px}
+.feature-copy p,.appointment-copy>p{font-size:20px;line-height:1.9;color:#c0d2d5;max-width:430px;margin-bottom:28px}
 .feature-photo{height:370px}
 .feature-photo img{width:100%;height:100%;object-fit:cover;border-radius:0 70px 0 0}
